@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Coconala Draft Saver",
+  "version": "1.0.0",
+  "description": "ココナラで下書き機能が使えるようになります。文章を途中で消しても復元できて便利です。",
+  "author": "nomin",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://coconala.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://coconala.com/talkrooms/*",
+        "https://coconala.com/mypage/direct_message/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icons/icon-48.png"
+  }
+}
