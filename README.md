@@ -21,6 +21,14 @@
 ## インストール方法
 
 ### Firefox
+
+**推奨: xpiファイル使用（再起動後も有効）**
+1. `coconala-draft-saver-firefox-v1.0.0.xpi` をダウンロード
+2. `about:config` で `xpinstall.signatures.required` を `false` に設定
+3. `about:addons` → 「ファイルからアドオンをインストール」
+4. ダウンロードしたxpiファイルを選択
+
+**開発者モード（再起動時に削除される）**
 1. `firefox-extension/` フォルダをダウンロード
 2. Firefoxで `about:debugging` を開く
 3. 「この Firefox」→「一時的なアドオンを読み込む」
@@ -46,6 +54,15 @@
 
 - `https://coconala.com/talkrooms/*` (トークルーム)
 - `https://coconala.com/mypage/direct_message/*` (メッセージ)
+
+## ダウンロード
+
+**Firefox用:**
+- **xpiファイル（推奨）**: `coconala-draft-saver-firefox-v1.0.0.xpi`
+- **ソースコード**: `firefox-extension/` フォルダ
+
+**Chrome用:**
+- **ソースコード**: `chrome-extension/` フォルダ
 
 ## アイコンについて
 
