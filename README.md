@@ -2,7 +2,7 @@
 
 ココナラのトークルームとメッセージ画面で下書き機能が使えるブラウザ拡張機能です。
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
 ![License](https://img.shields.io/badge/license-Copyright-red.svg)
 
 ## 機能
@@ -20,22 +20,24 @@
 
 ## インストール方法
 
+**推奨: [Releases](https://github.com/nomindes/coconala-draft-saver/releases) からダウンロード**
+
 ### Firefox
 
 **推奨: xpiファイル使用（再起動後も有効）**
-1. `coconala-draft-saver-firefox-v1.0.0.xpi` をダウンロード
+1. [Releases](https://github.com/nomindes/coconala-draft-saver/releases) から `coconala-draft-saver-firefox-v1.0.1.xpi` をダウンロード
 2. `about:config` で `xpinstall.signatures.required` を `false` に設定
 3. `about:addons` → 「ファイルからアドオンをインストール」
 4. ダウンロードしたxpiファイルを選択
 
 **開発者モード（再起動時に削除される）**
-1. `firefox-extension/` フォルダをダウンロード
+1. [Releases](https://github.com/nomindes/coconala-draft-saver/releases) から `firefox-extension/` フォルダをダウンロード
 2. Firefoxで `about:debugging` を開く
 3. 「この Firefox」→「一時的なアドオンを読み込む」
 4. `manifest.json` ファイルを選択
 
 ### Chrome  
-1. `chrome-extension/` フォルダをダウンロード
+1. [Releases](https://github.com/nomindes/coconala-draft-saver/releases) から `chrome-extension/` フォルダをダウンロード
 2. Chromeで `chrome://extensions/` を開く
 3. 「デベロッパー モード」をオンにする
 4. 「パッケージ化されていない拡張機能を読み込む」でフォルダを選択
@@ -57,17 +59,15 @@
 
 ## ダウンロード
 
+**[Releases](https://github.com/nomindes/coconala-draft-saver/releases) からダウンロードしてください**
+
 **Firefox用:**
-- **xpiファイル（推奨）**: `coconala-draft-saver-firefox-v1.0.0.xpi`
+- **xpiファイル（推奨）**: `coconala-draft-saver-firefox-v1.0.1.xpi`
 - **ソースコード**: `firefox-extension/` フォルダ
 
 **Chrome用:**
 - **ソースコード**: `chrome-extension/` フォルダ
 
-## アイコンについて
-
-各拡張機能フォルダの `icons/` に `icon-48.png` (48x48px) を配置してください。
-アイコンファイルは含まれていないため、お好みのアイコンをご用意ください。
 
 ## トラブルシューティング
 
@@ -100,6 +100,11 @@ Copyright (c) 2024 nomin. All rights reserved.
 - Website: https://nomin.jp
 
 ## 更新履歴
+
+### v1.0.1 (2025-08-19)
+- xpiファイル対応（永続インストール）
+- インストール方法の詳細化
+- Releasesからのダウンロード推奨
 
 ### v1.0.0 (2025-08-19)
 - 初回リリース
